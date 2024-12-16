@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 id="title">freeCodeCamp Survey Form</h1>
+      <br />
+      <p id="description">
+        Thank you for taking the time to help us improve the platform
+      </p>
+      <br />
+
+      <!-- Container Form -->
+      <div class="container-form">
+        <form id="survey-form">
+          <label id="name-label" for="name"
+            >Name <br />
+            <input type="text" id="name" required placeholder="Enter Your Name"
+          /></label>
+          <br />
+          <br />
+
+          <label id="email-label" for="email"
+            >Email <br />
+            <input
+              type="email"
+              id="email"
+              required
+              placeholder="Enter your Email"
+          /></label>
+          <br />
+          <br />
+
+          <label id="number-label"
+            >Age (option) <br /><input
+              id="number"
+              min="1"
+              max="100"
+              type="number"
+              placeholder="Age"
+          /></label>
+          <br /><br />
+
+          <label for="dropdown"
+            >Which option best describes your current role?
+            <br />
+            <select name="dropdown" id="dropdown">
+              <option hidden>Select current role...</option>
+              <option value="student">Student</option>
+              <option value="fulltimejob">Full Time Job</option>
+              <option value="fulltime leaner">Full Time Leaner</option>
+              <option value="prefer">Prefer not to say</option>
+              <option value="other">Other</option>
+            </select>
+          </label>
+          <br /><br />
+
+          <label>Would you recommend freeCodeCamp to a friend?</label> <br />
+          <br />
+          <label id="options">
+            <input type="radio" name="options" value="definitely" />
+            Denifitely </label
+          ><br />
+          <label>
+            <input type="radio" name="options" value="maybe" />
+            Maybe </label
+          ><br />
+          <label>
+            <input type="radio" name="options" value="notsure" /> Not sure
+          </label>
+          <br /><br />
+
+          <label>Where did you get the information from?</label><br /><br />
+          <label><input type="checkbox" value="instagram" /> Instagram </label>
+          <br />
+          <label><input type="checkbox" value="facebook" /> Facbook</label>
+          <br />
+          <label><input type="checkbox" value="google" /> Google</label>
+          <br />
+
+          <label><input type="checkbox" value="gmail" /> Gmail </label>
+          <br /><br />
+
+          <label>Any comments or suggestions?</label><br />
+          <textarea
+            placeholder="Enter your comment in here..."
+            rows="6"
+            id="textarea"></textarea>
+          <br /><br />
+
+          <button id="submit" type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
